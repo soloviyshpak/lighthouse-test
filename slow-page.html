@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      /* Неиспользуемый CSS */
+      .unused1,
+      .unused2 {
+        color: red;
+        font-size: 50px;
+      }
+    </style>
+    <script>
+      function heavyCalc() {
+        for (let i = 0; i < 1000000000; i++) {}
+      }
+      heavyCalc();
+    </script>
+  </head>
+  <body>
+    <h1>Страница для аудита</h1>
+    <!-- Большое изображение без размеров -->
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+      alt="Горы"
+    />
+    <!-- Еще несколько больших изображений -->
+    <img
+      src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+      alt="Горы 2"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1518837695005-2083093ee35b"
+      alt="Горы 3"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Неиспользуемая тяжелая библиотека -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </body>
+</html>
